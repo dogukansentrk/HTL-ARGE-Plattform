@@ -1,1 +1,12 @@
 
+$id = $_POST ["id"];
+$Connection = new MYSQLI ("Localhost","root","","DB1");
+
+$Statement = $Connection -> prepare ("SELECT * FROM TABELLE1 WHERE ID = ?");
+$Statement -> bind_Param ("i",$Id);
+$Statement -> execute()
+$Resultset = $Statement -> get_Result()
+$all = $Resultset -> fetch_all(MYSQLI_ASSOC);
+
+header(`Content Type: applications/json`);
+echo json_encode($all);
