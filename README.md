@@ -45,10 +45,11 @@ Ziel des Projekts ist die Entwicklung einer webbasierten Plattform für Schüler
 
 ## Technologie
 
-- Python Backend (FastAPI)
+- JAVA Backend (FastAPI)
 - SQLite Datenbank
 - JWT für Authentifizierung
 - WebUntis REST API (Session-Token) für Stundenplandaten
 - BeautifulSoup + requests (Web Scraping als Fallback)
-- React Frontend
+- HTML Frontend
 - SMTP / SendGrid für E-Mail-Benachrichtigungen
+- LDAP
